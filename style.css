@@ -6,6 +6,8 @@ body {
   background-position: center top;
   background-attachment: fixed;
   filter: blur(var(--blur));
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -15,18 +17,56 @@ body {
 }
 
 .navigation {
-  background: rgba(95, 173, 198, 0.3);
+  background: rgba(95, 173, 198, 0.8);
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
   height: 10vh;
   justify-items: right;
   align-items: end;
+}
+
+.nav-item {
+  padding: 0 1vw;
+  text-decoration: none;
+}
+
+.link-holder {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.fancy-font {
+  font-family: 'Satisfy', cursive;
+}
+
+.fancy-font.name {
+  margin-bottom: -10px;
+  font-size: 24px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background: rgba(0, 59, 81, 0.5);
-  color: white
+}
+
+#profile-image {
+  border: solid #003B51 15px;
+  border-radius: 5px;
+  height: 90%;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgba(0, 59, 81, 0.5);
+  height: 50vh;
+}
+
+.contact {
+  background: rgba(0, 59, 81, 0.5);
+}
+
+.footer {
+  background: rgba(0, 59, 81, 0.9);
 }
