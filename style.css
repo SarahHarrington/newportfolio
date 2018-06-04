@@ -17,12 +17,19 @@ body {
 }
 
 .navigation {
-  background: rgba(95, 173, 198, 0.8);
+  background: rgba(95, 173, 198, 0.4);
   display: grid;
   grid-template-columns: 2fr 1fr;
   height: 10vh;
+  width: 100vw;
   justify-items: right;
   align-items: end;
+  border-bottom: 2px solid rgb(95, 173, 198);
+  position: fixed;
+}
+
+.navigation + .container {
+  padding-top: 10vh;
 }
 
 .nav-item {
@@ -48,12 +55,19 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background: rgba(0, 59, 81, 0.5);
+  height: 80vh;
 }
+
+.about-section{
+  background: rgba(0, 59, 81, 0.8);
+  margin: 2rem;
+}
+
 
 #profile-image {
   border: solid #003B51 15px;
   border-radius: 5px;
-  height: 90%;
+  height: 60%;
 }
 
 .portfolio {

@@ -1,8 +1,11 @@
 console.log('loaded');
 
-function blurImage() {
-  // const image = document.querySelector();
-  console.log('blur image');
-}
+// const navBar = document.querySelector('.navigation');
+// console.log(navBar);
 
-window.onscroll = blurImage();
+// function scrollDown() {
+//   navBar.style.background = 'rgba(95, 173, 198, 1);'
+// }
+
+
+// let scrollingDown = window.addEventListener('scroll', scrollDown)
