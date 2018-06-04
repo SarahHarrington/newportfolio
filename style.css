@@ -1,86 +1,81 @@
 body {
   width: 100vw;
   height: auto;
+  background: #19091C;
   margin: 0;
-  background-image: url('https://images.unsplash.com/photo-1510607663-c3e0510d8360?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd85f6de8d018b501e24b22195dfcade&auto=format&fit=crop&w=2378&q=80');
-  background-position: center top;
-  background-attachment: fixed;
-  filter: blur(var(--blur));
-  color: white;
+  color: #F0F7EE;
   font-family: 'Roboto', sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: 100vw;
+  grid-template-rows: auto;
   grid-row-gap: 5vh;
-}
-
-.navigation {
-  background: rgba(95, 173, 198, 0.4);
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  height: 10vh;
-  width: 100vw;
-  justify-items: right;
-  align-items: end;
-  border-bottom: 2px solid rgb(95, 173, 198);
-  position: fixed;
-}
-
-.navigation + .container {
-  padding-top: 10vh;
-}
-
-.nav-item {
-  padding: 0 1vw;
-  text-decoration: none;
-}
-
-.link-holder {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
 }
 
 .fancy-font {
   font-family: 'Satisfy', cursive;
 }
 
-.fancy-font.name {
-  margin-bottom: -10px;
-  font-size: 24px;
+.fancy-font.big {
+  font-size: 60px;
 }
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background: rgba(0, 59, 81, 0.5);
-  height: 80vh;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
 }
 
 .about-section{
-  background: rgba(0, 59, 81, 0.8);
   margin: 2rem;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-rows: auto;
 }
 
+.link-icons {
+  font-size: 32px;
+}
+
+.link-icons a {
+  color: #F0F7EE; 
+}
+
+.link-icons a:hover {
+  color: #8B728E;
+}
+
+.my-work-link {
+  grid-column: span 2;
+}
+
+.profile-name {
+  margin: 0;
+}
 
 #profile-image {
-  border: solid #003B51 15px;
-  border-radius: 5px;
-  height: 60%;
+  border-radius: 50%;
+  border: solid 15px #37123C;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: rgba(0, 59, 81, 0.5);
-  height: 50vh;
+  height: 100vh;
+  background: #F0F7EE;
+  color: #37123C;
 }
 
-.contact {
-  background: rgba(0, 59, 81, 0.5);
-}
+
+/* .contact {
+} */
 
 .footer {
-  background: rgba(0, 59, 81, 0.9);
+  background: #1E0A21;
 }
