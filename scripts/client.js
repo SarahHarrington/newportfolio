@@ -1,11 +1,24 @@
-console.log('loaded');
+console.log('javascript loaded');
 
-// const navBar = document.querySelector('.navigation');
-// console.log(navBar);
+const about = document.querySelector('.about');
+const moreAbout = document.querySelector('#about-more');
+const lessAbout = document.querySelector('#about-less');
+const moreAboutSection = document.querySelector('.more-about-section');
+const myWork = document.querySelector('.my-work');
 
-// function scrollDown() {
-//   navBar.style.background = 'rgba(95, 173, 198, 1);'
-// }
+console.log();
 
+function showMoreAbout() {
+  console.log('button clicked');
+  moreAboutSection.classList.toggle('show');
+  moreAbout.style.display = !'none';
+}
 
-// let scrollingDown = window.addEventListener('scroll', scrollDown)
+function hideSections() {
+  console.log('show work button clicked');
+  about.style.display = 'none';
+}
+
+moreAbout.addEventListener('click', showMoreAbout);
+lessAbout.addEventListener('click', showMoreAbout)
+myWork.addEventListener('click', hideSections);

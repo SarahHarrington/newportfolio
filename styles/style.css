@@ -3,7 +3,7 @@ body {
   height: auto;
   background: #19091C;
   margin: 0;
-  color: #F6FAF5;
+  color: #E9E5EA;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -45,16 +45,31 @@ body {
   grid-template-rows: auto;
 }
 
+.more-about-section {
+  display: none;
+}
+
+.show {
+  display: grid;
+}
+
+.arrow:hover {
+  color: #8B728E;
+  cursor: pointer;
+}
+
 .link-icons {
   font-size: 32px;
 }
 
 .link-icons a {
-  color: #F6FAF5; 
+  color: #E9E5EA; 
 }
 
 .link-icons a:hover {
   color: #8B728E;
+  cursor: pointer;
+
 }
 
 .my-work-link {
@@ -74,16 +89,18 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  height: 100vh;
-  background: #F6FAF5;
+  /* height: 100vh; */
+  background: #E9E5EA;
   color: #37123C;
+  padding: 2rem;
 }
 
 .port-item {
   display: grid;
   grid-template-columns: 1fr;
-  border: solid 1px black;
-
+  border: solid 1rem #37123C;
+  align-items: center;
+  justify-items: center;
 }
 
 .port-img {
@@ -100,6 +117,33 @@ body {
   grid-column: 1 / -1;
   height: 1rem;
   margin: 0;
+}
+
+.more-button {
+  border-radius: 0;
+  border: 2px solid #E9E5EA;
+  background: #19091C;
+  color: #E9E5EA;
+}
+
+.more-button:hover {
+  cursor: pointer;
+  border: 2px solid #8B728E;
+  color: #8B728E;
+}
+
+.more-button-dark {
+  border-radius: 0;
+  border: 2px solid #19091C;
+  background: #E9E5EA;
+  color: #19091C;
+}
+
+.more-button-dark:hover {
+  cursor: pointer;
+  /* border: 2px solid #8B728E;
+  color: #8B728E; */
+  background: #8B728E;
 }
 
 .footer {

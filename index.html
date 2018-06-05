@@ -6,7 +6,6 @@
   <title>Sarah Harrington - Developer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="scripts/client.js"></script>
   <link rel="stylesheet" href="vendors/fontawesome-all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Satisfy" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
@@ -14,11 +13,11 @@
 
 <body>
   <div class="container"><!--container Div -->
-    <div class="header">
+    <!-- <div class="header">
       <a href="#">Home</a>
       <a href="https://www.canvasplayground.sarahdoes.tech">Canvas Playground</a>
       <a href="https://www.memorygame.sarahdoes.tech">Memory Game</a>
-    </div>
+    </div> -->
     <div class="about"> <!-- About -->
       <div class="about-section">
         <p class="fancy-font big profile-name">Hi. I'm Sarah.</p>
@@ -28,17 +27,23 @@
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <div>
+        <div class="about-section">
           <p>I love creating things and using technology to solve problems.</p>
-          <i class="fas fa-chevron-circle-down"></i>
-          <i class="fas fa-chevron-circle-up"></i>
+          <i class="fas fa-chevron-circle-down arrow" id="about-more"></i>
+          <div class="more-about-section about-section">
+            <p>Leopard bombay. Bombay cougar, bobcat tabby. Donskoy american shorthair but ragdoll for scottish fold so savannah jaguar. Persian lion and persian. Cougar. Donskoy bengal lion. Ocicat lion sphynx yet bengal so manx. Scottish fold turkish angora balinese mouser or maine coon. </p>
+            <p>Ocelot burmese ocicat jaguar ocicat yet russian blue yet havana brown. Kitty himalayan tiger. Egyptian mau bobcat yet tom for british shorthair bombay. Persian. Burmese. Manx tiger. Singapura manx or scottish fold burmese and abyssinian havana brown so cornish rex. Sphynx norwegian forest balinese , munchkin. </p>
+            <i class="fas fa-chevron-circle-up arrow" id="about-less"></i>
+          </div>
       </div>
       </div>
       <div class="about-section">
         <img id="profile-image" src="images/profile.jpg" alt="">
       </div>
       <div class="my-work-link">
-        My Work
+        <button class="more-button">Home</button>
+        <button class="my-work more-button">My Work</button>
+        <button class="more-button">Contact</button>
       </div>
     </div><!-- END About -->
     <div class="portfolio"> <!-- Portfolio -->
@@ -47,21 +52,33 @@
         <img class="port-img" src="images/canvasplayground.png" alt="">
       </div>
       <div class="port-item">
+        <p>Memory Game</p>
         <img class="port-img"src="images/memorygame.png" alt="">
       </div>
       <div class="port-item">
+        <p>Andrew Residence On-Call Scheduling</p>
         <img class="port-img" src="images/andrew-residence.png" alt="">
       </div>
       <div class="port-item">
-        <img class="port-img" src="images/pantrystocker.png" alt="">
+        <p>Pantry Stocker</p>
+        <div>
+            <img class="port-img" src="images/pantrystocker.png" alt="">
+            <img class="port-img" src="images/pantrystocker-item.png" alt="">
+            <img class="port-img" src="images/pantrystocker-shop.png" alt="">
+        </div>
       </div>
       <div class="port-item">
-        <img class="port-img" src="images/foodflow-log.png" alt="">
-      </div>
-      <div class="port-item">
-        <img class="port-img" src="images/lifegallery.png" alt="">
+        <p>Food Flow</p>
+        <div>
+            <img class="port-img" src="images/foodflow-log.png" alt="">
+            <img class="port-img" src="images/foodflow-cal.png" alt="">
+            <img class="port-img" src="images/foodflow-profile.png" alt="">
+        </div>
       </div>
       <!-- <div class="port-item">
+        <img class="port-img" src="images/lifegallery.png" alt="">
+      </div>1
+      <div class="port-item">
         <img class="port-img" src="images/realestate.png" alt="">
       </div>
       <div class="port-item">
@@ -70,6 +87,11 @@
       <div class="port-item">
         <img class="port-img" src="images/todolist.png" alt="">
       </div> -->
+      <div class="my-work-link">
+          <button class="more-button-dark">Home</button>
+          <button class="my-work more-button-dark">My Work</button>
+          <button class="more-button-dark">Contact</button>
+        </div>
     </div><!-- END Portfolio -->
     <div class="contact">
       <p>This and stuff to go here for contact info</p>
@@ -78,6 +100,9 @@
   <footer class="footer">
     <p>Footer</p>
   </footer>
+
+  <script src="scripts/client.js"></script>
+
 </body>
 
 </html>
