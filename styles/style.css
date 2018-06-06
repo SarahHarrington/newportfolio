@@ -99,12 +99,12 @@ body {
 
 .portfolio-item {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .port-item {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   border: solid 1rem #37123C;
@@ -116,7 +116,7 @@ body {
 }
 
 .port-item-slide {
-  display: grid;
+  display: none;
   background: rgba(25, 9, 28, 0.4);
   width: 28vw;
   height: 40vh;
@@ -175,8 +175,8 @@ body {
 
 .slide-button {
   border-radius: 0;
-  border: 2px solid #E9E5EA;
-  background: rgba(25, 9, 28, 0.4);
+  border: 3px solid #E9E5EA;
+  background: rgba(25, 9, 28, 0);
   color: #E9E5EA;
   font-size: 2rem;
 }
