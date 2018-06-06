@@ -72,8 +72,8 @@ body {
 
 }
 
-.my-work-link {
-  grid-column: span 2;
+.nav-links {
+  grid-column: 1 / -1;
 }
 
 .profile-name {
@@ -93,18 +93,45 @@ body {
   background: #E9E5EA;
   color: #37123C;
   padding: 2rem;
+  justify-items: center;
+  /* align-items: center; */
+}
+
+.portfolio-item {
+  position: relative;
+  z-index: 1;
 }
 
 .port-item {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr;
   border: solid 1rem #37123C;
   align-items: center;
   justify-items: center;
+  width: 28vw;
+  height: 40vh;
+  box-shadow: 10px 10px 5px 0px rgba(202,190,203,1);
+}
+
+.port-item-slide {
+  display: grid;
+  background: rgba(25, 9, 28, 0.4);
+  width: 28vw;
+  height: 40vh;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  position: absolute;
+  z-index: 3;
+  justify-items: center;
+  align-items: center;
 }
 
 .port-img {
   height: 15rem;
+  position: relative;
+  z-index: 3;
 }
 
 #home {
@@ -144,6 +171,14 @@ body {
   /* border: 2px solid #8B728E;
   color: #8B728E; */
   background: #8B728E;
+}
+
+.slide-button {
+  border-radius: 0;
+  border: 2px solid #E9E5EA;
+  background: rgba(25, 9, 28, 0.4);
+  color: #E9E5EA;
+  font-size: 2rem;
 }
 
 .footer {
