@@ -18,7 +18,6 @@ function showMoreAbout() {
   console.log('button clicked');
   moreAboutSection.classList.toggle('not-show');
   moreAboutSection.classList.toggle('show-more-about-section');
-  // moreAboutSection.classList.toggle('hidden');
   moreAbout.classList.toggle('hidden');
   lessAbout.classList.toggle('hidden');
 }
@@ -28,7 +27,6 @@ function hideSections() {
 }
 
 function showPortSlide(e) {
-  // console.log(e)
   e.target.children[0].classList.toggle('port-item-slide');
 }
 
