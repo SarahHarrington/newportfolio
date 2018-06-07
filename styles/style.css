@@ -3,7 +3,7 @@ body {
   height: auto;
   background: #19091C;
   margin: 0;
-  color: #E9E5EA;
+  color: #F8FBF7;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -24,10 +24,15 @@ body {
   font-family: 'Satisfy', cursive;
 }
 
-.fancy-font.big {
-  font-size: 60px;
+.big {
+  font-size: 4rem;
   text-shadow: 6px 6px 0px rgba(255,255,255,0.2);
 }
+
+.med {
+  font-size: 1.5rem;
+}
+
 
 .about {
   display: grid;
@@ -37,7 +42,21 @@ body {
   align-items: center;
 }
 
-.about-section{
+.about-section-left {
+  margin: 2rem;
+  display: grid;
+  grid-template-rows: 12rem 10rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-left-top {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-section-right {
   margin: 2rem;
   justify-items: center;
   align-items: center;
@@ -45,12 +64,18 @@ body {
   grid-template-rows: auto;
 }
 
-.more-about-section {
+.not-show {
   display: none;
 }
 
-.show {
+.show-more-about-section {
+  padding-top: 2rem;
   display: grid;
+  justify-items: center;
+  align-items: center;
+  /* animation: slide-down;
+  animation-duration: 1s;
+ */
 }
 
 .arrow:hover {
@@ -58,12 +83,20 @@ body {
   cursor: pointer;
 }
 
+.hidden {
+  font-size: 0;
+}
+
+.show {
+  font-size: 1rem; 
+}
+
 .link-icons {
   font-size: 32px;
 }
 
 .link-icons a {
-  color: #E9E5EA; 
+  color: #F8FBF7; 
 }
 
 .link-icons a:hover {
@@ -90,7 +123,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   /* height: 100vh; */
-  background: #E9E5EA;
+  background: #F8FBF7;
   color: #37123C;
   padding: 2rem;
   justify-items: center;
@@ -113,11 +146,16 @@ body {
   width: 28vw;
   height: 40vh;
   box-shadow: 10px 10px 5px 0px rgba(202,190,203,1);
+  overflow: hidden;
+}
+
+.slide {
+  height: 0;
 }
 
 .port-item-slide {
-  display: none;
-  background: rgba(25, 9, 28, 0.4);
+  display: grid;
+  background: rgba(25, 9, 28, 0.5);
   width: 28vw;
   height: 40vh;
   padding-top: 1rem;
@@ -126,10 +164,13 @@ body {
   z-index: 3;
   justify-items: center;
   align-items: center;
+  animation-name: example;
+  animation-duration: 0.1s;
 }
 
 .port-img {
   height: 15rem;
+  /* width: 27vw; */
   position: relative;
   z-index: 3;
 }
@@ -148,9 +189,9 @@ body {
 
 .more-button {
   border-radius: 0;
-  border: 2px solid #E9E5EA;
+  border: 2px solid #F8FBF7;
   background: #19091C;
-  color: #E9E5EA;
+  color: #F8FBF7;
 }
 
 .more-button:hover {
@@ -162,7 +203,7 @@ body {
 .more-button-dark {
   border-radius: 0;
   border: 2px solid #19091C;
-  background: #E9E5EA;
+  background: #F8FBF7;
   color: #19091C;
 }
 
@@ -175,12 +216,32 @@ body {
 
 .slide-button {
   border-radius: 0;
-  border: 3px solid #E9E5EA;
+  border: 3px solid #F8FBF7;
   background: rgba(25, 9, 28, 0);
-  color: #E9E5EA;
+  color: #F8FBF7;
   font-size: 2rem;
+}
+
+.slide-button:hover {
+  cursor: pointer;
 }
 
 .footer {
   background: #1E0A21;
+}
+
+@keyframes example {
+  0% {background-color:rgba(25, 9, 28, 0.1);}
+  25% {background-color:rgba(25, 9, 28, 0.2);}
+  50% {background-color:rgba(25, 9, 28, 0.3);}
+  75% {background-color:rgba(25, 9, 28, 0.4);}
+  100% {background-color:rgba(25, 9, 28, 0.5);}
+}
+
+@keyframes slide-down {
+  0% {height: 0};
+  25% {height: 25%};
+  50% {height: 50%};
+  75% {height: 75%};
+  100% {height: 100%};
 }
