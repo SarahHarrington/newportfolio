@@ -35,7 +35,10 @@ function showPortSlide(e) {
 // }
 
 function showPop(e) {
-  console.log('Show More button clicked', e)
+  console.log('Show More button clicked', e.target.id);
+  let activePop = document.querySelector(`.${e.target.id}`);
+  console.log(activePop)
+  activePop.style.display = 'grid';
 }
 
 moreAbout.addEventListener('click', showMoreAbout);
