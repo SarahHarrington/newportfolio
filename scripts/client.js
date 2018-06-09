@@ -3,21 +3,15 @@ console.log('javascript loaded');
 const about = document.querySelector('.about');
 const portSlides = [...document.querySelectorAll('.portfolio-item')];
 const header = document.querySelector('.header');
-const myWork = document.querySelector('.my-work');
 const myWorkButton = document.querySelector('.my-work-button');
 const navLinks = document.querySelectorAll('.nav-link');
+const portfolio = document.querySelector('.portfolio');
 
 portSlides.forEach(function (slide) {
-  // console.log(slide);
   slide.querySelector('.slide-button').addEventListener('click', showPop);
   slide.addEventListener('mouseenter', showPortSlide);
   slide.addEventListener('mouseleave', showPortSlide);
 })
-
-function hideSections() {
-  about.style.display = 'none';
-  header.style.background = '#F8FBF7';
-}
 
 function showPortSlide(e) {
   e.target.children[0].classList.toggle('port-item-slide');
@@ -28,14 +22,10 @@ function scrollToMyWork() {
   header.style.display = 'grid';
   header.style.background = '#F8FBF7';
   navLinks.forEach((link) => {
-    link.classList.remove('more-button');
-    link.classList.add('more-button-dark');
+    link.style.background = '#F8FBF7';
+    link.style.color = '#19091C';
   })
 }
-
-// function hidePortSlide(e) {
-//   e.target.children[0].style.display = 'none';
-// }
 
 function showPop(e) {
   console.log('Show More button clicked', e.target.id);
@@ -44,5 +34,8 @@ function showPop(e) {
   activePop.style.display = 'grid';
 }
 
-myWork.addEventListener('click', scrollToMyWork);
+function scrolling(e) {
+  console.log(e);
+}
 myWorkButton.addEventListener('click', scrollToMyWork);
+portfolio.addEventListener('onscroll', scrolling);

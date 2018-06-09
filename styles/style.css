@@ -4,7 +4,7 @@ body {
   background: #19091C;
   margin: 0;
   color: #F8FBF7;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -24,7 +24,14 @@ body {
   z-index: 7;
   justify-items: end;
   align-items: center;
-  /* border-bottom: #050506 .2rem solid; */
+}
+
+.nav-link {
+  border: none;
+  background: #19091C;
+  color: #F8FBF7;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .fancy-font {
