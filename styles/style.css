@@ -15,10 +15,16 @@ body {
 }
 
 .header {
+  display: grid;
+  grid-template-columns: 1fr;
   background: #19091C;
   position: fixed;
+  height: 5vh;
   width: 100vw;
   z-index: 7;
+  justify-items: end;
+  align-items: center;
+  /* border-bottom: #050506 .2rem solid; */
 }
 
 .fancy-font {
@@ -34,7 +40,7 @@ body {
   font-size: 1.5rem;
 }
 
-.about {
+.home {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
@@ -42,21 +48,13 @@ body {
   align-items: center;
 }
 
-.about-section-left {
-  margin: 2rem;
-  display: grid;
-  grid-template-rows: 12rem 10rem;
-  justify-items: center;
-  align-items: center;
-}
-
-.about-left-top {
+.home-section-left {
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-.about-section-right {
+.home-section-right {
   margin: 2rem;
   justify-items: center;
   align-items: center;
@@ -121,7 +119,7 @@ body {
   color: #37123C;
   padding: 2rem;
   justify-items: center;
-  /* align-items: center; */
+  height: 100vh;
 }
 
 .portfolio-item {
