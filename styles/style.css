@@ -300,6 +300,14 @@ body {
   100% {background-color:rgba(25, 9, 28, 0.5);}
 }
 
+.about {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
 h1 {
   font-family: 'Satisfy', cursive;
   color: #19091C;
