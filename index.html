@@ -13,11 +13,12 @@
 
 <body>
   <div class="container"><!--container Div -->
-    <!-- <div class="header">
-      <a href="#">Home</a>
+    <div class="header">
+      <button class="more-button"><a href="#">Home</a></button>
+      <button class="more-button my-work-button">My Work</button>
       <a href="https://www.canvasplayground.sarahdoes.tech">Canvas Playground</a>
       <a href="https://www.memorygame.sarahdoes.tech">Memory Game</a>
-    </div> -->
+    </div>
     <div class="about"> <!-- About -->
       <div class="about-section-left">
         <div class="about-left-top">
@@ -50,9 +51,9 @@
         <button class="more-button">Contact</button>
       </div>
     </div><!-- END About -->
-    <div class="portfolio"> <!-- Portfolio -->
+    <div class="portfolio" id="portfolio"> <!-- Portfolio -->
       <div class="nav-links">
-          <button class="more-button-dark">Home</button>
+          <button class="more-button-dark port-home">Home</button>
         </div>
         <div class="portfolio-item">
           <div class="slide">
@@ -131,9 +132,19 @@
     <p>Footer</p>
   </footer>
   <div class="pop-up canvas-playground">
+      <button class="more-button-dark close-pop">Close</button>
     <div class="pop-up-content">
-      <h1>Canvas Playground</h1>
-      <img class="pop-img" src="images/canvasplayground.png" alt="">
+      <h1 class="pop-header">Canvas Playground</h1>
+      <div>
+        <img class="pop-img" src="images/canvasplayground.png" alt="">
+      </div>
+      <div>
+        <p>Info about the project will go here</p>
+        <p>Tech:</p>
+      </div>
+      <div class="pop-links">
+          <i class="fab fa-github"></i>
+      </div>
     </div>
   </div>
 

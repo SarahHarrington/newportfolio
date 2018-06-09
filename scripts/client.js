@@ -6,6 +6,8 @@ const lessAbout = document.querySelector('#about-less');
 const moreAboutSection = document.querySelector('#more-about-section');
 const myWork = document.querySelector('.my-work');
 const portSlides = [...document.querySelectorAll('.portfolio-item')];
+const header = document.querySelector('.header');
+const myWorkButton = document.querySelector('.my-work-button');
 
 portSlides.forEach(function (slide) {
   // console.log(slide);
@@ -24,10 +26,18 @@ function showMoreAbout() {
 
 function hideSections() {
   about.style.display = 'none';
+  header.style.background = '#F8FBF7';
 }
+
+
 
 function showPortSlide(e) {
   e.target.children[0].classList.toggle('port-item-slide');
+}
+
+function scrollToMyWork() {
+  // location.href = "#portfolio";
+  document.getElementById("portfolio").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
 // function hidePortSlide(e) {
@@ -44,3 +54,4 @@ function showPop(e) {
 moreAbout.addEventListener('click', showMoreAbout);
 lessAbout.addEventListener('click', showMoreAbout)
 myWork.addEventListener('click', hideSections);
+myWorkButton.addEventListener('click', scrollToMyWork);
