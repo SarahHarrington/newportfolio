@@ -1,5 +1,3 @@
-console.log('javascript loaded');
-
 const container = document.querySelector('.container');
 const home = document.querySelector('.home');
 const about = document.querySelector('.about');
@@ -78,12 +76,11 @@ function scrollDirection(e) {
     })
   }
 }
-
+// let popClose = null;
 function showPop(e) {
-  console.log('Show More button clicked', e.target.id);
   let activePop = document.querySelector(`.${e.target.id}`);
-  console.log(activePop)
   activePop.style.display = 'grid';
+  activePop.querySelector('.close-pop').addEventListener('click', () => activePop.style.display = 'none');
 }
 
 window.addEventListener('scroll', scrollDirection);
