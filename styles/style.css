@@ -14,6 +14,7 @@ body {
   grid-row-gap: 5vh;
 }
 
+/* Header */
 .header {
   display: grid;
   grid-template-columns: 1fr;
@@ -39,7 +40,7 @@ body {
 }
 
 .big {
-  font-size: 4rem;
+  font-size: 5rem;
   text-shadow: 6px 6px 0px rgba(255,255,255,0.2);
 }
 
@@ -47,6 +48,7 @@ body {
   font-size: 1.5rem;
 }
 
+/* Home */
 .home {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -67,28 +69,6 @@ body {
   align-items: center;
   display: grid;
   grid-template-rows: auto;
-}
-
-.not-show {
-  display: none;
-}
-
-.show-more-about-section {
-  padding-top: 3rem;
-  display: grid;
-}
-
-.arrow:hover {
-  color: #8B728E;
-  cursor: pointer;
-}
-
-.hidden {
-  font-size: 0;
-}
-
-.show {
-  font-size: 1rem; 
 }
 
 .link-icons {
@@ -127,6 +107,16 @@ body {
   padding: 2rem;
   justify-items: center;
   height: 100vh;
+  font-size: 1.5rem;
+}
+
+.port-header {
+  font-family: 'Satisfy', cursive;
+  color: #19091C;
+  font-size: 3rem;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  grid-column: 1 / -1;
+  font-weight: bold;
 }
 
 .portfolio-item {
@@ -169,15 +159,10 @@ body {
 }
 
 .port-img {
-  height: 200px;
+  height: 14rem;
   position: relative;
   z-index: 3;
 }
-/* 
-.port-img-border {
-  border: 2px solid #37123C;
-  background: white;
-} */
 
 #home {
   grid-column: 1 / -1;
@@ -253,7 +238,7 @@ body {
   margin-left: calc(100vw - 90vw);
   margin-right: calc(100vw - 90vw);
   margin-top: calc(100vh - 90vh);
-  /* margin-bottom: calc(100vh - 90vh); */
+  margin-bottom: calc(100vh - 90vh);
   -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
@@ -266,7 +251,7 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  background-color: #CDCCCD;
+  /* background-color: #CDCCCD; */
   margin: auto;
   padding: 20px;
   width: 80%;
@@ -306,10 +291,40 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  grid-gap: 1rem;
+}
+
+.about-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-header {
+  font-family: 'Satisfy', cursive;
+  font-size: 3rem;
+  text-shadow: 6px 6px 0px rgba(255,255,255,0.2);
+  grid-column: 1 / -1;
 }
 
 h1 {
   font-family: 'Satisfy', cursive;
   color: #19091C;
   font-size: 3rem;
+}
+
+.contact {
+  background: #F8FBF7;
+  height: 100vh;
 }

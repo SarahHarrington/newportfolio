@@ -12,54 +12,73 @@
 </head>
 
 <body>
-  <div class="container"><!--container Div -->
+  <div class="container">
+    <!--container Div -->
+    <!-- Navigation -->
     <div class="header">
       <div>
-        <button class="nav-link home-button"><i class="fas fa-home"></i></button>
+        <button class="nav-link home-button">
+          <i class="fas fa-home"></i>
+        </button>
         <button class="nav-link my-work-button">My Work</button>
         <button class="nav-link about-me-button">About</button>
-        <button class="nav-link">Contact</button>
+        <button class="nav-link contact-me-button">Contact</button>
         <button class="nav-link">Canvas Playground</button>
         <button class="nav-link">Memory Game</button>
       </div>
     </div>
-    <div class="home"> <!-- About -->
+    <!-- END Navigation -->
+    <!-- Home -->
+    <div class="home" id="home-area">
       <div class="home-section-left">
-          <p class="fancy-font big profile-name">Hi. I'm Sarah.</p>
-          <div class="link-icons">
-            <a href="" target="_blank"><i class="fas fa-envelope "></i></a>
-            <a href="https://github.com/SarahHarrington" target="_blank"><i class="fab fa-github-alt"></i></a>
-            <a href="https://twitter.com/SarahDoesTech" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/sarah-harrington-2017/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <p class="med">Full Stack Software Developer</p>
+        <p class="fancy-font big profile-name">Hi. I'm Sarah.</p>
+        <div class="link-icons">
+          <a href="" target="_blank">
+            <i class="fas fa-envelope "></i>
+          </a>
+          <a href="https://github.com/SarahHarrington" target="_blank">
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <a href="https://twitter.com/SarahDoesTech" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sarah-harrington-2017/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <p class="med">Modern Software Developer</p>
       </div>
       <div class="home-section-right">
         <img id="profile-image" src="images/profile.jpg" alt="">
       </div>
-    </div><!-- END About -->
-    <div class="portfolio" id="portfolio"> <!-- Portfolio -->
-        <div class="portfolio-item">
-          <div class="slide">
-            <button class="slide-button" id="canvas-playground">See More</button>
-          </div>
-          <div class="port-item">
-            <p>Canvas Playground</p>  
-            <img class="port-img" src="images/canvasplayground.png" alt="">
-          </div>
+    </div>
+    <!-- END Home -->
+    <!-- Portfolio -->
+    <div class="portfolio" id="portfolio">
+      <div class="port-header">
+        <div>My Work</div>
       </div>
       <div class="portfolio-item">
         <div class="slide">
-            <button class="slide-button" id="memory-game">See More</button>
+          <button class="slide-button" id="canvas-playground">See More</button>
+        </div>
+        <div class="port-item">
+          <p>Canvas Playground</p>
+          <img class="port-img" src="images/canvasplayground.png" alt="">
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="slide">
+          <button class="slide-button" id="memory-game">See More</button>
         </div>
         <div class="port-item">
           <p>Memory Game</p>
-          <img class="port-img"src="images/memorygame.png" alt="">
+          <img class="port-img" src="images/memorygame.png" alt="">
         </div>
       </div>
       <div class="portfolio-item">
         <div class="slide">
-            <button class="slide-button" id="andrew-residence">See More</button>
+          <button class="slide-button" id="andrew-residence">See More</button>
         </div>
         <div class="port-item">
           <p>Andrew Residence On-Call Scheduling</p>
@@ -67,55 +86,84 @@
         </div>
       </div>
       <div class="portfolio-item">
-          <div class="slide">
-              <button class="slide-button" id="pantry-stocker">See More</button>
-          </div>
-      <div class="port-item">
-        <p>Pantry Stocker</p>
-        <div>
+        <div class="slide">
+          <button class="slide-button" id="pantry-stocker">See More</button>
+        </div>
+        <div class="port-item">
+          <p>Pantry Stocker</p>
+          <div>
             <img class="port-img" src="images/pantrystocker.png" alt="">
             <img class="port-img" src="images/pantrystocker-item.png" alt="">
             <img class="port-img" src="images/pantrystocker-shop.png" alt="">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="portfolio-item">
+      <div class="portfolio-item">
         <div class="slide">
-            <button class="slide-button" id="food-flow">See More</button>
+          <button class="slide-button" id="food-flow">See More</button>
         </div>
-      <div class="port-item">
-        <p>Food Flow</p>
-        <div>
+        <div class="port-item">
+          <p>Food Flow</p>
+          <div>
             <img class="port-img" src="images/foodflow-log.png" alt="">
             <img class="port-img" src="images/foodflow-cal.png" alt="">
             <img class="port-img" src="images/foodflow-profile.png" alt="">
+          </div>
         </div>
       </div>
     </div>
-    </div><!-- END Portfolio -->
+    <!-- END Portfolio -->
+    <!-- About Me -->
     <div class="about" id="about-me">
       <div class="about-overview">
-        <p>Some stuff out me</p>
-        <p>More things about me</p>
+        <h3 class="about-header">About Me</h3>
+        <p>My love for coding was sparked by learning HTML, CSS, and JavaScript so I could customize SharePoint. I love continuous
+          learning, problem solving and am thrilled by the continuously changing development community.</p>
+        <p>I love creating web applications that are beautiful and intuitive for the user. When I'm not busy creating code,
+          I love working on bicycles and home improvement projects.</p>
       </div>
+
       <div class="about-skills">
-        <p>Stuff I Know</p>
+        <h3 class="about-header">Stuff I Know</h3>
         <div>
-          <p>list one</p>
-          <p>list two</p>
-          <p>list three</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>ES6</p>
+          <p>JQuery</p>
+          <p>React</p>
+        </div>
+        <div>
+          <p>AngularJS</p>
+          <p>React</p>
+          <p>Angular Material</p>
+          <p>Bootstrap</p>
+          <p>Express</p>
+          <p>JSON</p>
+        </div>
+        <div>
+          <p>Node.js</p>
+          <p>MongoDB</p>
+          <p>PostgreSQL</p>
+          <p>Git & Github</p>
+          <p>Restful APIs</p>
+          <p>SharePoint</p>
         </div>
       </div>
     </div>
-    <div>
-        Contact
-      </div>
-  </div><!-- End Container Div -->
+  </div>
+  <!-- END About Me -->
+  <div class="contact" id="contact-me">
+    
+  </div>
   <footer class="footer">
     <p>Footer</p>
   </footer>
+  </div>
+  <!-- End Container Div -->
+  <!-- Pop Ups! -->
   <div class="pop-up canvas-playground">
-      <button class="more-button-dark close-pop">Close</button>
+    <button class="more-button-dark close-pop">Close</button>
     <div class="pop-up-content">
       <h1 class="pop-header">Canvas Playground</h1>
       <div>
@@ -126,7 +174,7 @@
         <p>Tech:</p>
       </div>
       <div class="pop-links">
-          <i class="fab fa-github"></i>
+        <i class="fab fa-github"></i>
       </div>
     </div>
   </div>

@@ -1,13 +1,24 @@
 console.log('javascript loaded');
 
+const container = document.querySelector('.container');
+const home = document.querySelector('.home');
 const about = document.querySelector('.about');
+const portfolio = document.querySelector('.portfolio');
+const contact = document.querySelector('.contact');
+const footer = document.querySelector('.footer');
 const portSlides = [...document.querySelectorAll('.portfolio-item')];
 const header = document.querySelector('.header');
 const homeButton = document.querySelector('.home-button');
 const myWorkButton = document.querySelector('.my-work-button');
 const aboutMeButton = document.querySelector('.about-me-button');
+const contactMeButton = document.querySelector('.contact-me-button');
 const navLinks = document.querySelectorAll('.nav-link');
-const portfolio = document.querySelector('.portfolio');
+
+let myHomeTop = header.offsetHeight;
+let homeAndWorkBorder =  home.offsetHeight;
+let workAndAboutBorder = home.offsetHeight + portfolio.offsetHeight;
+let aboutAndContactBorder = header.offsetHeight + home.offsetHeight + portfolio.offsetHeight + about.offsetHeight;
+let contactAndFooterBorder = header.offsetHeight + home.offsetHeight + portfolio.offsetHeight + about.offsetHeight + contact.offsetHeight;
 
 portSlides.forEach(function (slide) {
   slide.querySelector('.slide-button').addEventListener('click', showPop);
@@ -18,25 +29,54 @@ portSlides.forEach(function (slide) {
 function showPortSlide(e) {
   e.target.children[0].classList.toggle('port-item-slide');
 }
+let lastPosition = window.scrollY;
+
+function scrollToHome() {
+  document.getElementById("home-area").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
 
 function scrollToMyWork() {
-  document.getElementById("portfolio").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  // header.style.display = 'grid';
-  header.style.background = '#F8FBF7';
-  navLinks.forEach((link) => {
-    link.style.background = '#F8FBF7';
-    link.style.color = '#19091C';
-  })
+  document.getElementById("portfolio").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
 
 function scrollToAboutMe() {
-  document.getElementById("about-me").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  header.style.display = 'grid';
-  header.style.background = '#19091C';
-  navLinks.forEach((link) => {
-    link.style.background = '#19091C';
-    link.style.color = '#F8FBF7';
-  })
+  document.getElementById("about-me").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+
+function scrollToContact() {
+  document.getElementById("contact-me").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+}
+
+function scrollDirection(e) {
+  lastPosition = window.scrollY;
+  if (lastPosition < workAndAboutBorder && lastPosition > homeAndWorkBorder) {
+    header.style.background = '#F8FBF7';
+    navLinks.forEach((link) => {
+      link.style.background = '#F8FBF7';
+      link.style.color = '#19091C';
+    })
+  }
+  if (lastPosition > myHomeTop && lastPosition < homeAndWorkBorder) {
+    header.style.background = '#19091C';
+    navLinks.forEach((link) => {
+      link.style.background = '#19091C';
+      link.style.color = '#F8FBF7';
+    })
+  }
+  if (lastPosition > workAndAboutBorder && lastPosition < aboutAndContactBorder) {
+    header.style.background = '#19091C';
+    navLinks.forEach((link) => {
+      link.style.background = '#19091C';
+      link.style.color = '#F8FBF7';
+    })
+  }
+  if (lastPosition > aboutAndContactBorder) {
+    header.style.background = '#F8FBF7';
+    navLinks.forEach((link) => {
+      link.style.background = '#F8FBF7';
+      link.style.color = '#19091C';
+    })
+  }
 }
 
 function showPop(e) {
@@ -46,11 +86,8 @@ function showPop(e) {
   activePop.style.display = 'grid';
 }
 
-function scrolling(e) {
-  console.log(e);
-}
-
-homeButton.addEventListener('click')
+window.addEventListener('scroll', scrollDirection);
+homeButton.addEventListener('click', scrollToHome);
 myWorkButton.addEventListener('click', scrollToMyWork);
 aboutMeButton.addEventListener('click', scrollToAboutMe);
-portfolio.addEventListener('onscroll', scrolling);
+contactMeButton.addEventListener('click', scrollToContact);
