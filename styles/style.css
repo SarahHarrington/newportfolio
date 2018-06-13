@@ -161,6 +161,7 @@ body {
 
 .port-img {
   height: 12rem;
+  /* width: 20vw; */
   position: relative;
   z-index: 3;
 }
@@ -256,6 +257,12 @@ body {
   color: #1E0A21;
 }
 
+.pop-proj-info {
+  display: grid;
+  align-items: start;
+  justify-items: center;
+}
+
 .pop-header {
   grid-column: 1 / -1;
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
@@ -347,22 +354,48 @@ body {
   grid-column: 1 / -1;
 }
 
-/* h1 {
-  font-family: 'Satisfy', cursive;
-  color: #19091C;
-  font-size: 3rem;
-} */
-
 .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background: #F8FBF7;
   height: 100vh;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 3rem;
   color: #19091C;
+}
 
+.contact-header {
+  grid-column: 1 / -1;
+  font-size: 3rem;
+  justify-self: center; 
+  font-family: 'Satisfy', cursive;
+  text-shadow: 6px 6px 0px rgba(45,31,48,0.2);
+  font-weight: bold;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.contact-picture {
+  display: grid;
+  align-items: center;
+}
+
+.contact-picture img {
+  width: 40vw;
+  border-radius: 2px;
+  opacity: 0.9;
 }
 
 .contact a {
   color: #19091C;
   text-decoration: none;
+}
+
+.bold-font {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
