@@ -274,6 +274,7 @@ body {
   font-family: 'Satisfy', cursive;
   color: #19091C;
   font-size: 3rem;
+  font-weight: bold;
 }
 
 .close-pop {
@@ -496,6 +497,7 @@ body {
 
   .portfolio{
     grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
   .port-item {
@@ -526,6 +528,7 @@ body {
   .contact {
     font-size: 1rem;
     height: auto;
+    padding: 1rem;
   }
 
   .contact-icon {
@@ -552,6 +555,12 @@ body {
 
   .pop-up-content {
     grid-template-columns: 1fr;
+  }
+
+  .pop-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
   }
   
   .pop-img {
