@@ -368,9 +368,9 @@ body {
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background: #F8FBF7;
-  height: 100vh;
+  height: 50vh;
   font-size: 2rem;
   padding: 3rem;
   color: #19091C;
@@ -533,9 +533,7 @@ body {
   .contact {
     font-size: 1rem;
     height: auto;
-    /* padding: 1rem; */
-    display: grid;
-    grid-template-columns: 20vw 20vw 20vw;
+    padding: 1rem;
   }
 
   .contact-icon {
@@ -547,10 +545,9 @@ body {
     display: none;
   }
 
-  /* .contact-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
+  .contact-links {
+    grid-column: 1 / -1;
+  }
 
   .contact-header {
     grid-column: 1 / -1;
