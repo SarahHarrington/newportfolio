@@ -400,11 +400,11 @@ body {
 }
 
 .contact-links-a:hover {
-  text-shadow: 6px 6px 0px rgba(45,31,48,0.2);
+  text-shadow: 3px 3px 0px rgba(45,31,48,0.2);
 }
 
 .contact-icon {
-  font-size: 3.1rem;
+  font-size: 2rem;
   margin-right: 1rem;
 }
 
@@ -516,7 +516,7 @@ body {
   }
 
   .port-img { 
-    height: 10rem;
+    height: 8rem;
     position: relative;
     z-index: 3;
   } 
@@ -533,7 +533,9 @@ body {
   .contact {
     font-size: 1rem;
     height: auto;
-    padding: 1rem;
+    /* padding: 1rem; */
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
   }
 
   .contact-icon {
@@ -545,9 +547,10 @@ body {
     display: none;
   }
 
-  .contact-links {
-    grid-column: 1 / -1;
-  }
+  /* .contact-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  } */
 
   .contact-header {
     grid-column: 1 / -1;
