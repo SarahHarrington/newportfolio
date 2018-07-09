@@ -333,8 +333,8 @@ body {
 
 .about {
   display: grid;
-  height: 100vh;
-  grid-template-rows: 30vh 60vh;
+  height: 70vh;
+  grid-template-rows: 30vh 40vh;
   padding: 2rem;
   padding-top: 3rem;
   font-size: 1.3rem;
