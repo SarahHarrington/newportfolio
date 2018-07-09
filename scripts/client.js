@@ -2,7 +2,7 @@ const container = document.querySelector('.container');
 const home = document.querySelector('.home');
 const about = document.querySelector('.about');
 const portfolio = document.querySelector('.portfolio');
-const contact = document.querySelector('.contact');
+// const contact = document.querySelector('.contact');
 const footer = document.querySelector('.footer');
 const portSlides = [...document.querySelectorAll('.portfolio-item')];
 const header = document.querySelector('.header');
@@ -16,7 +16,7 @@ let myHomeTop = header.offsetHeight;
 let homeAndWorkBorder =  home.offsetHeight;
 let workAndAboutBorder = home.offsetHeight + portfolio.offsetHeight;
 let aboutAndContactBorder = header.offsetHeight + home.offsetHeight + portfolio.offsetHeight + about.offsetHeight;
-let contactAndFooterBorder = header.offsetHeight + home.offsetHeight + portfolio.offsetHeight + about.offsetHeight + contact.offsetHeight;
+// let contactAndFooterBorder = header.offsetHeight + home.offsetHeight + portfolio.offsetHeight + about.offsetHeight + contact.offsetHeight;
 
 portSlides.forEach(function (slide) {
   slide.querySelector('.slide-button').addEventListener('click', showPop);
@@ -87,4 +87,4 @@ window.addEventListener('scroll', scrollDirection);
 homeButton.addEventListener('click', scrollToHome);
 myWorkButton.addEventListener('click', scrollToMyWork);
 aboutMeButton.addEventListener('click', scrollToAboutMe);
-contactMeButton.addEventListener('click', scrollToContact);
+// contactMeButton.addEventListener('click', scrollToContact);
