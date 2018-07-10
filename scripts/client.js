@@ -2,21 +2,19 @@ const container = document.querySelector('.container');
 const home = document.querySelector('.home');
 const about = document.querySelector('.about');
 const portfolio = document.querySelector('.portfolio');
-// const contact = document.querySelector('.contact');
-const footer = document.querySelector('.footer');
 const portSlides = [...document.querySelectorAll('.portfolio-item')];
 const header = document.querySelector('.header');
 const homeButton = document.querySelector('.home-button');
 const myWorkButton = document.querySelector('.my-work-button');
 const aboutMeButton = document.querySelector('.about-me-button');
-const contactMeButton = document.querySelector('.contact-me-button');
 const navLinks = document.querySelectorAll('.nav-link');
+const descriptText = document.querySelector('.descript-text');
+const contactLinks = document.querySelectorAll('.contact-links');
 
 let myHomeTop = header.offsetHeight;
 let homeAndWorkBorder =  home.offsetHeight;
 let workAndAboutBorder = home.offsetHeight + portfolio.offsetHeight;
 let aboutAndContactBorder = header.offsetHeight + home.offsetHeight + portfolio.offsetHeight + about.offsetHeight;
-// let contactAndFooterBorder = header.offsetHeight + home.offsetHeight + portfolio.offsetHeight + about.offsetHeight + contact.offsetHeight;
 
 portSlides.forEach(function (slide) {
   slide.querySelector('.slide-button').addEventListener('click', showPop);
@@ -27,6 +25,39 @@ portSlides.forEach(function (slide) {
 function showPortSlide(e) {
   e.target.children[0].classList.toggle('port-item-slide');
 }
+
+contactLinks.forEach(function (link) {
+  link.addEventListener('mouseenter', updateDescriptText);
+  link.addEventListener('mouseleave', defaultText);
+})
+
+function updateDescriptText(e) {
+  switch (e.target.id) {
+    case 'email':
+      descriptText.innerHTML = 'Email Me!';
+      break;
+    case 'github':
+      descriptText.innerHTML = 'Check out my repos!';
+      break;
+    case 'twitter':
+      descriptText.innerHTML = 'See my Tweets!';
+      break;
+    case 'linkedin':
+      descriptText.innerHTML = 'Professional Networking!';
+      break;
+    case 'resume':
+      descriptText.innerHTML = 'My resume in PDF!';
+      break;
+    default:
+      descriptText.innerHTML = 'Modern Software Developer';
+      break;
+  }
+}
+
+function defaultText() {
+  descriptText.innerHTML = 'Modern Software Developer';
+}
+
 let lastPosition = window.scrollY;
 
 function scrollToHome() {
@@ -76,7 +107,7 @@ function scrollDirection(e) {
     })
   }
 }
-// let popClose = null;
+
 function showPop(e) {
   let activePop = document.querySelector(`.${e.target.id}`);
   activePop.style.display = 'grid';
@@ -87,4 +118,3 @@ window.addEventListener('scroll', scrollDirection);
 homeButton.addEventListener('click', scrollToHome);
 myWorkButton.addEventListener('click', scrollToMyWork);
 aboutMeButton.addEventListener('click', scrollToAboutMe);
-// contactMeButton.addEventListener('click', scrollToContact);
