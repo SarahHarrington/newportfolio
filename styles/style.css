@@ -339,9 +339,23 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  height: 5vh;
+  height: 10vh;
   grid-row-start: 2;
   grid-row-end: 3;
+  padding-bottom: 1vh;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #F8FBF7;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #574C59;
 }
 
 /* Tablet Sized Screens */
