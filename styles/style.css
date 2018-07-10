@@ -11,6 +11,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   display: grid;
   grid-template-columns: 100vw;
@@ -63,7 +67,6 @@ body {
 
 .nav-link:hover {
   text-shadow: 3px 3px 0px rgba(194,193,194,0.5);
-
 }
 
 /* Home */
@@ -306,7 +309,7 @@ body {
 .about {
   display: grid;
   height: 100vh;
-  grid-template-rows: 30vh 40vh;
+  grid-template-rows: 40vh 40vh;
   padding-top: 7vh;
   font-size: 1.3rem;
   background-color: #19091c;

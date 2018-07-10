@@ -1,4 +1,5 @@
-const container = document.querySelector('.container');
+// const container = document.querySelector('.container');
+const body = document.querySelector('.body');
 const home = document.querySelector('.home');
 const about = document.querySelector('.about');
 const portfolio = document.querySelector('.portfolio');
@@ -115,11 +116,13 @@ function showPop(e) {
   activePop = document.querySelector(`.${e.target.id}`);
   activePop.style.display = 'grid';
   activePop.querySelector('.close-pop').addEventListener('click', closePop);
+  body.classList.add('no-scroll');
 }
 
 function closePop() {
   popOpen = false;
   activePop.style.display = 'none';
+  body.classList.remove('no-scroll');
 }
 
 function checkPop(e) {
