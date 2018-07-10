@@ -109,19 +109,37 @@ function scrollDirection(e) {
 }
 
 let activePop;
+let popOpen = false;
 function showPop(e) {
+  popOpen = true;
   activePop = document.querySelector(`.${e.target.id}`);
   activePop.style.display = 'grid';
   activePop.querySelector('.close-pop').addEventListener('click', closePop);
 }
 
 function closePop() {
-  displayingPop = false;
+  popOpen = false;
   activePop.style.display = 'none';
+}
+
+function checkPop(e) {
+  if (popOpen === true) {
+    if (e.target.classList.contains('pop')) {
+      return;
+    }
+    else {
+      closePop();
+    }
+  }
+  if (popOpen === false) {
+    if (e.target.classList.contains('slide-button')) {
+      showPop(e);
+    }
+  }
 }
 
 window.addEventListener('scroll', scrollDirection);
 homeButton.addEventListener('click', scrollToHome);
 myWorkButton.addEventListener('click', scrollToMyWork);
 aboutMeButton.addEventListener('click', scrollToAboutMe);
-
+window.addEventListener('click', checkPop);
