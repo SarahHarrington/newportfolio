@@ -412,7 +412,7 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .home {
     grid-template-columns: 1fr;
     height: 100vh;
