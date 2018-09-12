@@ -65,8 +65,13 @@ body {
   padding-right: 1rem;
 }
 
+.about-me-button {
+  padding-right: 3rem;
+}
+
 .nav-link:hover {
   text-shadow: 3px 3px 0px rgba(194,193,194,0.5);
+  cursor: pointer;
 }
 
 /* Home */
