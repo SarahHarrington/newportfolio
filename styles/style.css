@@ -123,9 +123,7 @@ body {
 }
 
 #profile-image {
-  height: 50vh;
-  border-radius: 50%;
-  border: solid 15px #37123C;
+  height: 65vh;
 }
 
 /* Portfolio Section */
@@ -381,8 +379,6 @@ body {
 
   #profile-image {
     height: 30vh;
-    border-radius: 50%;
-    border: solid 15px #37123C;
   }
 
   .portfolio{
@@ -432,8 +428,6 @@ body {
 
   #profile-image {
     height: 30vh;
-    border-radius: 50%;
-    border: solid 15px #37123C;
   }
 
   .portfolio{
