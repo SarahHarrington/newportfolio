@@ -47,7 +47,7 @@ function updateDescriptText(e) {
       descriptText.innerHTML = 'Professional Networking!';
       break;
     case 'resume':
-      descriptText.innerHTML = 'My resume in PDF!';
+      descriptText.innerHTML = 'My resume!';
       break;
     default:
       descriptText.innerHTML = 'Modern Software Developer';
