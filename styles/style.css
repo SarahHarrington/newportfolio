@@ -449,6 +449,11 @@ body {
     height: 30vh;
   }
 
+  .nav-link {
+    font-size: .9rem;
+    padding-right: .8rem;
+  }
+
   .portfolio{
     grid-template-columns: 1fr;
     padding: 1rem;
