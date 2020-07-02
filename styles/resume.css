@@ -166,7 +166,6 @@ header {
   opacity: .5;
 }
 
-
 @media print {
   @page {
     margin: .25in;
@@ -187,6 +186,7 @@ header {
 
   #name-header {
     font-size: 30pt;
+    border: solid rgba(25,9,28,0.5) 1pt;
   }
 
   .header {
@@ -218,5 +218,32 @@ header {
   .accomplishments {
     margin: 4px 0;
     padding-inline-start: 20px;
+  }
+
+  .resume-left {
+    border-right: 1.5pt dotted rgba(25,9,28,0.5);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .printer-button {
+    width: 50%;
+    justify-self: center;
+    background-color: white;
+    height: 3vh;
+    margin-right: 1rem;
+    font-size: .8rem;
+    border-radius: .2em;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
   }
 }
