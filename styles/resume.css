@@ -11,7 +11,7 @@ body {
   border: 0;
   padding: 0;
   background-color: var(--dk-background);
-  font-size: 1rem;
+  font-size: .95rem;
 }
 
 h1, h2, h3, p {
@@ -31,9 +31,8 @@ a {
   display: grid;
   grid-template-columns: 7fr 3fr;
   font-family: var(--plain-font);
-  height: 11in;
-  width: 8.5in;
-  overflow: hidden;
+  height: 10.25in;
+  width: 7.75in;
   margin: 1rem;
 }
 
@@ -81,7 +80,7 @@ header {
 .contact-details {
   grid-column: 1 / -1;
   margin: 0;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .header {
@@ -89,13 +88,13 @@ header {
   font-weight: bold;
   margin: 0;
   font-family: var(--fancy-font);
-  margin-top: 1rem;
+  margin-top: .4rem;
 }
 
 .medium-header {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-top: .75rem;
+  margin-top: .5rem;
 }
 
 .small-header {
@@ -104,7 +103,7 @@ header {
 }
 
 .skills-section {
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 .skills {
@@ -170,23 +169,54 @@ header {
 
 @media print {
   @page {
-    margin: 0;
+    margin: .25in;
   }
 
   body {
     background-color: white;
-    font-size: 12pt;
+    font-size: 11pt;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .container {
+    margin: 0;
   }
 
   #name-header {
-    font-size: 28pt;
+    font-size: 30pt;
+  }
+
+  .header {
+    font-size: 24pt;
   }
 
   .medium-header {
-    font-size: 16pt;
+    font-size: 14pt;
   }
 
-  .hidden {
-    display: none;
+
+  .spacer {
+    margin-right: 10px;
+  }
+  
+  .contact-info {
+    display: grid;
+    margin: 4px 0;
+  }
+
+  .skills-section {
+    margin-top: 0;
+  }
+
+  .job-detail-small {
+    margin-left: 10px;
+  }
+
+  .accomplishments {
+    margin: 4px 0;
+    padding-inline-start: 20px;
   }
 }
