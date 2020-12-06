@@ -11,7 +11,7 @@ body {
   border: 0;
   padding: 0;
   background-color: var(--dk-background);
-  font-size: .95rem;
+  font-size: .9rem;
 }
 
 h1, h2, h3, p {
@@ -92,7 +92,7 @@ header {
 }
 
 .medium-header {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-top: .5rem;
 }
@@ -125,9 +125,9 @@ header {
 }
 
 .job-detail-small {
-  font-size: 1rem;
+  font-size: .7rem;
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .dates {
@@ -137,6 +137,7 @@ header {
 
 .job-title {
   margin: 0;
+  font-weight: bold;
 }
 
 .accomplishments {
@@ -186,7 +187,8 @@ header {
 
   #name-header {
     font-size: 30pt;
-    border: solid rgba(25,9,28,0.5) 1pt;
+    border-bottom: double rgba(25,9,28,0.5) 2pt;
+    background-image: none;
   }
 
   .header {
@@ -221,7 +223,7 @@ header {
   }
 
   .resume-left {
-    border-right: 1.5pt dotted rgba(25,9,28,0.5);
+    border-right: 1.5pt double rgba(25,9,28,0.5);
   }
 }
 
