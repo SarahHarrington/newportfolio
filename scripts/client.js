@@ -21,7 +21,7 @@ portSlides.forEach(function (slide) {
   slide.querySelector('.slide-button').addEventListener('click', showPop);
   slide.addEventListener('mouseenter', showPortSlide);
   slide.addEventListener('mouseleave', showPortSlide);
-})
+}) 
 
 function showPortSlide(e) {
   e.target.children[0].classList.toggle('port-item-slide');
