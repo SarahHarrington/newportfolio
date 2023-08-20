@@ -22,20 +22,23 @@
       <h1 id="name-header">Sarah Harrington</span><span class="spacer"></span></h1>
     </header>
     <div class="resume-left">
-      <h2 class="header">Experience</h2>
-
+      <!-- <h2 class="header">Experience</h2> -->
       <div class="job-section">
         <div class="job-header">
           <h3 class="medium-header company-name">Upsie</h3>
-          <p class="job-title">Senior Software Engineer</p>
+          <p class="job-title">Senior Full Stack Software Engineer</p>
           <p class="dates"> May 2022 - Present</p>
         </div>
         <ul class="accomplishments">
           <li>Built promo code lookup for internal customer service team</li>
-          <li>Created payment method storage in alignment with release of warranty subscriptions</li>
-          <li>Front end design for new partner facing portal and internal portal</li>
+          <li>Created payment method storage for subscription plans introduction integrated with Stripe</li>
+          <li>Automated robots.txt for SEO using customized Strapi add on</li>
+          <li>Migrated content from Wordpress to Strapi & created underlying Strapi architecture for blog posts & trained users</li>
+          <li>Front end design for internal and external facing portals, including mockups in Adobe XD, and writing code</li>
+          <li>Created Ember add on for common components across apps</li>
+          <li>Created app from scratch and migrated major Ember versions</li>
         </ul>
-        <p><strong>Tech Stack: </strong>Ember, Koa.js, Node.js, PostgreSQL</p>
+        <p><strong>Tech Stack: </strong>TypeScript, Ember.js, Koa.js, Node.js, TypeORM, PostgreSQL, Strapi, ControlPlane, Stripe</p>
       </div>
 
       <div class="job-section">
@@ -47,10 +50,10 @@
         <ul class="accomplishments">
           <li>Front end application updates using React.js</li>
           <li>AWS Lambda (Node.js) for microservice back end architecture</li>
-          <li>Used SQS & SNS for pub/sub between lambdas and integrated systems</li>
-          <li>Other AWS services used: SES, CloudWatch, IAM, Cognito</li>
+          <li>Streamlined CI/CD workflows by integrating orbs, variables, and caching to reduce build times</li>
+          <li>Other AWS services used: SQS, SNS, SES, S3, CloudWatch, IAM, Cognito</li>
         </ul>
-        <p><strong>Tech Stack: </strong>React, AWS, MongoDB</p>
+        <p><strong>Tech Stack: </strong>React, AWS, MongoDB, CircleCI</p>
       </div>
 
       <div class="job-section">
@@ -79,9 +82,9 @@
           <p class="dates"> Dec 2019 - Jun 2020</p>
         </div>
         <ul class="accomplishments">
-          <li>Completed small bug fix requests independently</li>
-          <li>Completed small & medium feature requests with mentor & pair programming</li>
+          <li>Completed small & medium feature requests</li>
         </ul>
+        <p><strong>Tech Stack: </strong>Ember.js, Ruby on Rails, PostgreSQL</p>
       </div>
       
       <div class="job-section">
@@ -91,25 +94,17 @@
           <p class="dates">Jan 2018 - Dec 2022</p>
         </div>
         <ul class="accomplishments">
-          <li>Provided ongoing support for project</li>
+          <li>Provided ongoing support for project from bootcamp final project</li>
         </ul>
-      </div>
-      
-      <div>
-        <h2 class="header">Education</h2>
-        <h3 class="small-header">Prime Digital Academy</h3>
-        <div class="edu-details">
-          <p>Full Stack Software Engineering</p>
-          <p class="dates">Jan 2018</p>
-        </div>
-        <h3 class="small-header">Metropolitan State University</h3>
-        <div class="edu-details">
-          <p>Business Adminstration B.S.</p>
-          <p class="dates">Jun 2011</p>
-        </div>
       </div>
     </div> <!-- End Resume Left -->
     <section class="resume-right">
+      <div>
+        <h2 class="header">About Me</h2>
+        <p class="headline">Career changer with over 10 years in HR and a plethora of customer service 
+          experience prior to software engineering.
+        </p>
+      </div>
       <div class="contact-info">
         <h2 class="header">Contact Me</h2>
         <p class="contact-details" id="email"><i class="fas fa-envelope" aria-hidden="true"></i> Sarah@SarahDoes.tech</p>
@@ -117,33 +112,37 @@
         <a class="contact-links" id="github" href="https://github.com/SarahHarrington" target="_blank" rel="noreferrer">
           <i class="fab fa-github-alt" aria-hidden="true"></i> SarahHarrington
         </a>
-        <a class="contact-links" id="twitter" href="https://twitter.com/SarahDoesTech" target="_blank" rel="noreferrer">
-          <i class="fab fa-twitter" aria-hidden="true"></i> SarahDoesTech
-        </a>
       </div>
         <div class="skills-section">
           <h2 class="header" id="skills-header">Professional Skills</h2>
-          <p class="skills">AWS <span class="tiny-and">(Lambda, CloudFront, CloudWatch, API Gateway, SNS, SQS, SES, IAM)</span></p>
-          <p class="skills">MongoDB</p>
-          <p class="skills">Node.js</p>
-          <p class="skills">React</p>
-          <p class="skills">HTML</p>
-          <p class="skills">CSS</p>
-          <p class="skills">JavaScript</p>
-          <p class="skills">jQuery</p>
-          <p class="skills">Ember</p>
-          <p class="skills">Ruby on Rails</p>
           <p class="skills">PostgreSQL</p>
+          <p class="skills">Ember.js</p>
+          <p class="skills">Node.js</p>
+          <p class="skills">HTML <span class="tiny-and"> & </span>CSS</p>
+          <p class="skills">TypeScript</p>
+          <p class="skills">JavaScript</p>
+          <p class="skills">AWS <span class="tiny-and">(Lambda, CloudFront, CloudWatch, API Gateway, S3, SNS, SQS, SES, IAM, Cognito)</span></p>
           <p class="skills">MongoDB</p>
-          <p class="skills">Jira<span class="tiny-and"> & </span>Trello</p>
-          <p class="skills">Git<span class="tiny-and"> & </span>Github</p>
-          <p class="skills">Agile<span class="tiny-and"> & </span>SCRUM</p>
+          <p class="skills">React</p>
+          <p class="skills">Ruby on Rails</p>
           <h2 class="header">Skills for Fun</h2>
           <p class="skills">Adobe Illustrator</p>
           <p class="skills">Vue.js</p>
-          <p class="skills">Socket.io</p>
-          <p class="skills">Firebase</p>
-          <p class="skills">Heroku</p>
+        </div>
+        <div>
+          <div>
+            <h2 class="header">Education</h2>
+            <h3 class="small-header">Prime Digital Academy</h3>
+            <div class="edu-details">
+              <p class="tiny-and">Full Stack Software Engineering</p>
+              <p class="dates tiny-and">Jan 2018</p>
+            </div>
+            <h3 class="small-header">Metropolitan State University</h3>
+            <div class="edu-details">
+              <p class="tiny-and">Business Administration</p>
+              <p class="dates tiny-and">Jun 2011</p>
+            </div>
+          </div>
         </div>
     </section>
   </div>
