@@ -349,7 +349,7 @@ body {
 .about-overview {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10vh 40vh;
+  /* grid-template-rows: 10vh 40vh; */
   justify-items: center;
   align-items: start;
   padding-left: 5vw;
@@ -362,6 +362,16 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
+}
+
+.about-site {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: start;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  grid-column-gap: 1rem;
 }
 
 /* footer */
