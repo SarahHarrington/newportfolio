@@ -50,13 +50,13 @@ function updateDescriptText(e) {
       descriptText.innerHTML = 'My resume!';
       break;
     default:
-      descriptText.innerHTML = 'Modern Software Developer';
+      descriptText.innerHTML = 'Software Engineer';
       break;
   }
 }
 
 function defaultText() {
-  descriptText.innerHTML = 'Modern Software Developer';
+  descriptText.innerHTML = 'Software Engineer';
 }
 
 let lastPosition = window.scrollY;
