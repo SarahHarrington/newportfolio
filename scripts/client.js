@@ -49,6 +49,9 @@ function updateDescriptText(e) {
     case 'resume':
       descriptText.innerHTML = 'My resume!';
       break;
+    case 'dev.to':
+      descriptText.innerHTML = 'Check out my blog posts on DEV.to!';
+      break;
     default:
       descriptText.innerHTML = 'Software Engineer';
       break;
