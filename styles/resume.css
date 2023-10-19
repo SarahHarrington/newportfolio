@@ -175,7 +175,7 @@ header {
 
   body {
     background-color: white;
-    font-size: 11pt;
+    font-size: 10pt;
   }
   
   .hidden {
@@ -193,7 +193,8 @@ header {
   }
 
   .header {
-    font-size: 24pt;
+    font-size: 20pt;
+    font-weight: normal;
   }
 
   .medium-header {

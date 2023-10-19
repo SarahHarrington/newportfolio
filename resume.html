@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./styles/resume.css">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
-  <link rel="stylesheet" href="assets/fontawesome/css/brands.min.css">
-  <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Satisfy&display=swap" rel="stylesheet">
   <title>Sarah Harrington Resume</title>
 </head>
@@ -31,17 +28,19 @@
         <div class="job-header">
           <h3 class="medium-header company-name">Upsie</h3>
           <p class="job-title">Senior Full Stack Software Engineer</p>
-          <p class="dates"> May 2022 - Present</p>
+          <p class="dates"> May 2022 - Sep 2023</p>
         </div>
         <ul class="accomplishments">
+          <li>Used TypesScript with Ember front end applications and Node monolith API</li>
+          <li>Wrote acceptance, integration, and unit tests for Ember using QUnit and Jest for Node API</li>
           <li>Designed and implemented new UIs for internal and e-commerce applications utilizing Adobe XD for mock-ups to simplify user experience</li>
           <li>Developed a user friendly promo code lookup tool for internal customer service team to improve efficiency resolving customer inquiries</li>
-          <li>Integrated payment method storage system for subscription plans using Stripe and existing payment processing allowing customers to self service payment updates</li>
+          <li>Integrated payment method storage for subscriptions Stripe and existing payment processing allowing customers to self service</li>
           <li>Implemented customized Strapi add on to automate the creation of SEO friendly robots.txt file</li>
-          <li>Successfully migrated content from Wordpress to Strapi platform, established architecture for blog posts and trained content editing team on its usage</li>
+          <li>Successfully migrated Wordpress content to Strapi, established architecture for blog posts & trained content team on its usage</li>
           <li>Created an Ember add-on that facilitated the use of common components across both all applications ensuring UI consistency</li>
         </ul>
-        <p><strong>Tech Stack: </strong>TypeScript, Ember, Koa, Node, TypeORM, PostgreSQL, Strapi, Stripe</p>
+        <p><strong>Tech Stack: </strong>TypeScript, Ember, Node, PostgreSQL, Jest, Qunit, Stripe</p>
       </div>
 
       <div class="job-section">
@@ -51,13 +50,14 @@
           <p class="dates"> May 2021 - May 2022</p>
         </div>
         <ul class="accomplishments">
-          <li>Completed front end feature requests and debugging</li>
+          <li>Created & updated AWS Lambda (Node.js) functions for microservice event driven back end architecture including making updates to API Gateway & CloudFront</li>
+          <li>Completed front end feature requests and debugging using React for customer and internal facing applications</li>
+          <li>TDD using Jest for front and back end testing</li>
           <li>Became SME on integration scripts between Netsuite and back end architecture, created documentation and process workflows</li>
-          <li>Created and updated AWS Lambda (Node.js) functions for microservice back end architecture including making updates to API Gateway and CloudFront</li>
           <li>Streamlined CI/CD workflows in CircleCI by integrating orbs, variables, and caching to reduce build times</li>
           <li>Other AWS services used: SQS, SNS, SES, S3, CloudWatch, IAM, Cognito, API Gateway, CloudFront</li>
         </ul>
-        <p><strong>Tech Stack: </strong>React, AWS, MongoDB, CircleCI</p>
+        <p><strong>Tech Stack: </strong>React, AWS, MongoDB, CircleCI, Agile, Jest</p>
       </div>
 
       <div class="job-section">
@@ -74,6 +74,7 @@
           <p class="dates">Dec 2018 - Dec 2019</p>
         </div>
         <ul class="accomplishments">
+          <li>Acted as team scrum master running agile processes</li>
           <li>Created & debugged custom JS & jQuery solutions for Eloqua & 3M.com</li>
           <li>Created scripts to pull reportable data from Eloqua REST API</li>
         </ul>
@@ -86,12 +87,12 @@
           <p class="dates"> Dec 2019 - Jun 2020</p>
         </div>
         <ul class="accomplishments">
-          <li>Completed small & medium feature requests</li>
+          <li>Completed small & medium feature requests using TDD</li>
         </ul>
-        <p><strong>Tech Stack: </strong>Ember, Ruby on Rails, PostgreSQL</p>
+        <p><strong>Tech Stack: </strong>Ember, Ruby on Rails, PostgreSQL, Agile, Mocha, Rspec</p>
       </div>
       
-      <div class="job-section">
+      <!-- <div class="job-section">
         <div class="job-header">
           <h3 class="medium-header company-name">Andrew Residence</h3>
           <p class="job-title">Freelance</p>
@@ -100,7 +101,7 @@
         <ul class="accomplishments">
           <li>Provided ongoing support for project from bootcamp final project</li>
         </ul>
-      </div>
+      </div> -->
     </div> <!-- End Resume Left -->
     <section class="resume-right">
       <div>
@@ -111,26 +112,29 @@
       </div>
       <div class="contact-info">
         <h2 class="header">Contact Me</h2>
-        <p class="contact-details" id="email"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Sarah@SarahDoes.tech</p>
-        <p class="contact-details" id="phone-number"><i class="fa-solid fa-phone" aria-hidden="true"></i> 612.387.7727</p>          
+        <p class="contact-details"><i class="ph ph-map-pin" aria-hidden="true"></i> Minneapolis, MN</p>
+        <p class="contact-details" id="email"><i class="ph ph-envelope-simple" aria-hidden="true"></i> Sarah@SarahDoes.tech</p>
+        <p class="contact-details" id="phone-number"><i class="ph ph-phone" aria-hidden="true"></i> 612.387.7727</p>          
         <a class="contact-links" id="github" href="https://github.com/SarahHarrington" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-github" aria-hidden="true"></i> SarahHarrington
+          <i class="ph ph-github-logo" aria-hidden="true"></i> SarahHarrington
         </a>
       </div>
         <div class="skills-section">
           <h2 class="header" id="skills-header">Professional Skills</h2>
-          <p class="skills">Ember</p>
-          <p class="skills">React</p>
-          <p class="skills">Node</p>
-          <p class="skills">JavaScript</p>
           <p class="skills">TypeScript</p>
+          <p class="skills">JavaScript</p>
+          <p class="skills">React</p>
+          <p class="skills">Ember</p>
+          <p class="skills">Node</p>
+          <p class="skills">AWS <span class="tiny-and">(Lambda, CloudFront, CloudWatch, API Gateway, S3, SNS, SQS, SES, IAM, Cognito)</span></p>
           <p class="skills">HTML <span class="tiny-and"> & </span>CSS</p>
           <p class="skills">PostgreSQL</p>
           <p class="skills">MongoDB</p>
           <p class="skills">Stripe <span class="tiny-and">(Payment Platform)</span></p>
           <p class="skills">Strapi <span class="tiny-and">(Headless CMS)</span></p>
-          <p class="skills">AWS <span class="tiny-and">(Lambda, CloudFront, CloudWatch, API Gateway, S3, SNS, SQS, SES, IAM, Cognito)</span></p>
           <p class="skills">Ruby on Rails</p>
+          <p class="skills">Agile</p>
+          <p class="skills">TDD (Mocha, Jest, Rspec)</p>
           <h2 class="header">Skills for Fun</h2>
           <p class="skills">Adobe Illustrator</p>
           <p class="skills">Vue</p>
